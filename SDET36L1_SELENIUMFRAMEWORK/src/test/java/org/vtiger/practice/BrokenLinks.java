@@ -35,6 +35,7 @@ public class BrokenLinks {
 		driver.get("https://www.facebook.com/");
 		
 		// Step1: What is the tag which has the link -  a/img
+		//good 
 		
 		List<WebElement> links = driver.findElements(By.xpath("//a"));
 		System.out.println("All links in amazon page  " +"=====>"+ links.size());
