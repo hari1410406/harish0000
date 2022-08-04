@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="firefox"/>
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="org.vtiger.contacts.CreateContactTestNgTest">
+        <methods>
+          <include name="genericUtilityTest"/>
+          <include name="createContactTest"/>
+          <include name="suiteteardown"/>
+          <include name="loginTest"/>
+          <include name="LogoutTest"/>
+          <include name="closeBrowser"/>
+          <include name="setupBrowser"/>
+        </methods>
+      </class> <!-- org.vtiger.contacts.CreateContactTestNgTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="org.vtiger.campaigns.CreateCampainTestngTest">
+        <methods>
+          <include name="genericUtilityTest"/>
+          <include name="suiteteardown"/>
+          <include name="loginTest"/>
+          <include name="createCampainTestngTest"/>
+          <include name="LogoutTest"/>
+          <include name="closeBrowser"/>
+          <include name="setupBrowser"/>
+        </methods>
+      </class> <!-- org.vtiger.campaigns.CreateCampainTestngTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
